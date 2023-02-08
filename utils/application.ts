@@ -1,5 +1,4 @@
 import { ApplicationInterface } from "types";
-import { number } from '../config.json';
 
 const clientNumber = "";
 const defaultApplication: ApplicationInterface = {

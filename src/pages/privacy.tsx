@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const Privacy = () => (
   <div>
@@ -12,7 +12,7 @@ At Wpp - Calendar, we respect the privacy of our users and are committed to prot
 </p>
 <p>
 Personal Information Collection and Use:
-We collect personal information from our users in order to provide them with the best possible experience while using our application. This information includes, but is not limited to, names and email addresses. We also collect and store data from the user's Google Calendar account, including all details contained in their calendar.
+We collect personal information from our users in order to provide them with the best possible experience while using our application. This information includes, but is not limited to, names and email addresses. We also collect and store data from the user{"'"}s Google Calendar account, including all details contained in their calendar.
 </p>
 <p>
 Data Retention and Deletion:
@@ -30,7 +30,6 @@ We reserve the right to change this privacy policy at any time. Any changes will
 Contact Us:
 If you have any questions about this privacy policy or the way in which we handle your personal information, please contact us at caiofresneda@gmail.com.
 </p>
-  </div>
-)
+  </div>)
 
 export default Privacy

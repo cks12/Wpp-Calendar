@@ -50,7 +50,7 @@ export default class WppHandler extends ApplicationSocketHandle {
     async sendMsg(msg: string): Promise<void>{
         try {
             this.log(`Enviando ${msg}`);
-            const number = process.env.WPP_NUMBER || "";
+            const number = this.Application.number;
             const chatId = number.substring(1) + "@c.us";
             this.Wpp.sendMessage(chatId, msg);
         }

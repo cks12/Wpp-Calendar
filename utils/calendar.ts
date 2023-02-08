@@ -1,7 +1,6 @@
 import { google } from 'googleapis';
 import { OAuth2Client } from 'google-auth-library';
 import OAuthDataBase from 'db';
-import credsGoogle from '../config/credsGoogle.json';
 
 // type credsType = typeof credsGoogle
 
@@ -16,8 +15,8 @@ class Calendar extends OAuthDataBase {
     constructor(){
         super();
         this.creds = {
-            clientId: credsGoogle.web.client_id,
-            clientSecret: credsGoogle.web.client_secret,
+            clientId: 'credsGoogle.web.client_id',
+            clientSecret: 'credsGoogle.web.client_secret',
             redirectUri: 'http://localhost:3000',
 
         };

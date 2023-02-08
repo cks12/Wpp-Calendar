@@ -1,8 +1,7 @@
 import { Server } from 'socket.io';
-import ApplicationSocketHandle from 'sockethandles';
 import WppHandler from 'utils/wppHandle';
 
-const SocketHandler = (req: Request, res: Response) => {
+const SocketHandler = (req: Request, res: Response|any) => {
     // Verify that socket server is available
     if (res.socket.server.io) return res.end();
 
