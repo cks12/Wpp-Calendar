@@ -10,8 +10,7 @@ export default class WppHandler extends ApplicationSocketHandle {
 
     constructor(io: Server){
         super(io);
-
-        this.Wpp = new Client({authStrategy: new LocalAuth()});
+        this.Wpp = new Client({});
         this.log("Loading wppHandler with socket server");
 
         this.Wpp.on('qr',(qrcode) => this.onQrCode(qrcode));
